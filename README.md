@@ -26,9 +26,11 @@ Retrieve the names and descriptions of all attractions located in Palermo.
 
 <details>
 <summary>Solution</summary>
-<br>
+
 ```sql
-SELECT attraction_name, description FROM attractions WHERE location = "Palermo"
+SELECT attraction_name, description
+FROM attractions
+WHERE location = "Palermo"
 ```
 </details>
 
@@ -37,9 +39,11 @@ Find the average rating of attractions in each type.
 
 <details>
 <summary>Solution</summary>
-<br>
+
 ```sql
-SELECT avg(rating) as average_rating FROM attractions GROUP BY attraction_type
+SELECT avg(rating) as average_rating
+FROM attractions
+GROUP BY attraction_type
 ```
 </details>
 
@@ -48,9 +52,11 @@ List the top 3 attractions with the highest entrance fee.
 
 <details>
 <summary>Solution</summary>
-<br>
+ 
 ```sql
-SELECT * FROM attractions ORDER BY entrance_fee DESC LIMIT 3
+SELECT * FROM attractions
+ORDER BY entrance_fee DESC
+LIMIT 3
 ```
 </details>
 
@@ -59,9 +65,11 @@ Count the number of visitors from each nationality.
 
 <details>
 <summary>Solution</summary>
-<br>
+ 
 ```sql
-SELECT nationality, COUNT(*) as num_visitors FROM visitors GROUP BY nationality
+SELECT nationality, COUNT(*) as num_visitors
+FROM visitors
+GROUP BY nationality
 ```
 </details>
 
@@ -70,9 +78,11 @@ Calculate the total number of visits for each attraction.
 
 <details>
 <summary>Solution</summary>
-<br>
+ 
 ```sql
-SELECT attraction_id, COUNT(*) as num_visits FROM visits GROUP BY attraction_id
+SELECT attraction_id, COUNT(*) as num_visits
+FROM visits
+GROUP BY attraction_id
 ```
 </details>
 
@@ -81,9 +91,10 @@ Identify the attractions that have not been visited by any visitors.
 
 <details>
 <summary>Solution</summary>
-<br>
+ 
 ```sql
-SELECT * FROM attractions WHERE attraction_id NOT IN (SELECT attraction_id FROM visits)
+SELECT * FROM attractions
+WHERE attraction_id NOT IN (SELECT attraction_id FROM visits)
 ```
 </details>
 
@@ -92,9 +103,10 @@ Find the hotels with a rating higher than 8 and located in Catania.
 
 <details>
 <summary>Solution</summary>
-<br>
+ 
 ```sql
-SELECT * FROM hotels WHERE rating > 8 AND location = "Catania"
+SELECT * FROM hotels
+WHERE rating > 8 AND location = "Catania"
 ```
 </details>
 
@@ -103,7 +115,7 @@ List the visitors who have booked hotels in Palermo.
 
 <details>
 <summary>Solution</summary>
-<br>
+ 
 ```sql
 SELECT V.* FROM visitors V, bookings B, hotels H
 WHERE V.visitor_id = B.visitor_id
@@ -117,9 +129,10 @@ Calculate the total revenue generated from hotel bookings.
 
 <details>
 <summary>Solution</summary>
-<br>
+ 
 ```sql
-SELECT SUM(price) as total_revenue FROM bookings
+SELECT SUM(price) as total_revenue
+FROM bookings
 ```
 </details>
 
@@ -128,7 +141,7 @@ Find the cuisine with the most restaurants offering it.
 
 <details>
 <summary>Solution</summary>
-<br>
+ 
 ```sql
 SELECT C.*, COUNT(*) as num_restaurants_offering
 FROM restaurants R, local_cuisine C
@@ -144,7 +157,7 @@ Calculate the average rating of attractions visited by visitors from each nation
 
 <details>
 <summary>Solution</summary>
-<br>
+ 
 ```sql
 SELECT VTORS.nationality, avg(A.rating) as average_rating
 FROM attractions A, visitors VTORS, visits VS
@@ -158,7 +171,7 @@ Identify the events happening in July 2024.
 
 <details>
 <summary>Solution</summary>
-<br>
+ 
 ```sql
 SELECT * FROM events
 WHERE MONTH(date) = 7 AND YEAR(date) = 2024
@@ -171,7 +184,7 @@ Find the visitors who have visited more than 3 attractions in a single day.
 
 <details>
 <summary>Solution</summary>
-<br>
+ 
 ```sql
 SELECT V.*, COUNT(DISTINCT VI.attraction_id) as num_attractions_visited
 FROM visitors V, visits VI
@@ -186,7 +199,7 @@ List the attractions that have been visited by visitors from at least 3 differen
 
 <details>
 <summary>Solution</summary>
-<br>
+ 
 ```sql
 SELECT A.*, COUNT(DISTINCT V.nationality) as num_visitors_nationalities
 FROM attractions A, visitors V, visits VI
@@ -201,7 +214,7 @@ Find the visitors who have visited both attractions located in Palermo and Catan
 
 <details>
 <summary>Solution #1</summary>
-<br>
+ 
 ```sql
 (SELECT V.*
 FROM visitors V, visits VI, attractions A
@@ -217,7 +230,7 @@ AND VI.attraction_id IN (SELECT attraction_id FROM attractions WHERE location = 
 
 <details>
 <summary>Solution #2</summary>
-<br>
+ 
 ```sql
 SELECT V.*
 FROM visitors V
@@ -238,7 +251,7 @@ Calculate the average duration of stays for visitors from each nationality.
 
 <details>
 <summary>Solution</summary>
-<br>
+ 
 ```sql
 SELECT nationality, avg(DATEDIFF(check_out_date, check_in_date)) as average_duration_stays
 FROM bookings B JOIN visitors V ON B.visitor_id = V.visitor_id
@@ -251,7 +264,7 @@ List the visitors who have not made any hotel bookings.
 
 <details>
 <summary>Solution</summary>
-<br>
+ 
 ```sql
 SELECT V.*
 FROM visitors V
@@ -264,7 +277,7 @@ Find the busiest month in terms of the number of visits.
 
 <details>
 <summary>Solution</summary>
-<br>
+ 
 ```sql
 SELECT MONTH(VI.visit_date), COUNT(*) as num_visits
 FROM visits VI
@@ -279,7 +292,7 @@ Identify the attractions that have not been visited in the last 6 months.
 
 <details>
 <summary>Solution</summary>
-<br>
+ 
 ```sql
 SELECT *
 FROM attractions A LEFT JOIN visits VI
