@@ -1,10 +1,10 @@
-# Welcome to SQLRevival: Sicily Edition!
+# Welcome to SQLRevival: Sicily Edition! :hugs: :beach_umbrella:
 
 ![alt text](sicily.png)
 
 ## Introduction:
 
-Are you ready to dust off your SQL skills and dive back into the world of databases? Whether you're a seasoned SQL pro or someone who hasn't touched SQL in years, this repository is your gateway to rekindling your passion for querying data. This repository is designed to provide a hands-on refresher on SQL through a series of exercises focused on managing bookings and visits in the beautiful island of Sicily.
+Are you ready to dust off your SQL skills and dive back into the world of databases? Whether you're a seasoned SQL pro or someone who hasn't touched SQL in years, this repository is your gateway to rekindling your passion for querying data. This repository is designed to provide a hands-on refresher on SQL through a series of exercises focused on managing bookings and visits in the beautiful island of Sicily! :desert_island:
 
 ## About the Database:
 Our database revolves around bookings and visits to various attractions in Sicily. From enchanting coastal towns to historic landmarks, Sicily offers a myriad of attractions for travelers. The database schema encompasses tables for attractions, bookings, visitors, and more, providing a comprehensive dataset for practicing SQL queries.
