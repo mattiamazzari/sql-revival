@@ -1,25 +1,25 @@
-#### Introduction:
+# Introduction:
 
 Welcome to SQLRevival: Sicily Edition!
 
 Are you ready to dust off your SQL skills and dive back into the world of databases? Whether you're a seasoned SQL pro or someone who hasn't touched SQL in years, this repository is your gateway to rekindling your passion for querying data. This repository is designed to provide a hands-on refresher on SQL through a series of exercises focused on managing bookings and visits in the beautiful island of Sicily.
 
-#### About the Database:
+## About the Database:
 Our database revolves around bookings and visits to various attractions in Sicily. From enchanting coastal towns to historic landmarks, Sicily offers a myriad of attractions for travelers. The database schema encompasses tables for attractions, bookings, visitors, and more, providing a comprehensive dataset for practicing SQL queries.
 
-#### Goals:
+## Goals:
 The primary goal of this repository is to help users reacquaint themselves with SQL by engaging in practical exercises. By working through queries tailored to Sicily bookings and visits, users can reinforce their understanding of SQL fundamentals and gain confidence in querying databases.
 
-#### What to Expect:
+## What to Expect:
 Within this repository, you'll find a series of SQL exercises ranging from basic to advanced levels. Each exercise is accompanied by clear instructions, sample data, and expected outcomes, allowing for a structured and progressive learning experience. Whether you're refreshing your memory or exploring new SQL concepts, these exercises will provide valuable practice opportunities.
 
-#### Contributions:
+## Contributions:
 We welcome contributions from SQL enthusiasts of all levels! If you have additional exercises, improvements to existing ones, or suggestions for enhancing the learning experience, feel free to submit pull requests. Together, we can create a valuable resource for SQL learners seeking to brush up on their skills.
 
 Let's Get Started:
 Whether you're a seasoned SQL pro or a newcomer looking to learn, dive into the exercises and start revitalizing your SQL proficiency with SQLRevival_SicilyBookings! Happy querying!
 
-#### Queries
+# Queries
 
 ###### Query 1:
 Retrieve the names and descriptions of all attractions located in Palermo.
