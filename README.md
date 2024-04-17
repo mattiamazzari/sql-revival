@@ -1,10 +1,12 @@
 # Welcome to SQLRevival: Sicily Edition! :hugs: :beach_umbrella:
 
+***Are you ready to dust off your SQL skills and dive back into the world of databases?**
+
 ![alt text](sicily.png)
 
 ## Introduction:
 
-Are you ready to dust off your SQL skills and dive back into the world of databases? Whether you're a seasoned SQL pro or someone who hasn't touched SQL in years, this repository is your gateway to rekindling your passion for querying data. This repository is designed to provide a hands-on refresher on SQL through a series of exercises focused on managing bookings and visits in the beautiful island of Sicily! :desert_island:
+Whether you're a seasoned SQL pro or someone who hasn't touched SQL in years, this repository is your gateway to rekindling your passion for querying data. This repository is designed to provide a hands-on refresher on SQL through a series of exercises focused on managing bookings and visits in the beautiful island of Sicily! :desert_island:
 
 ## About the Database
 Our database revolves around bookings and visits to various attractions in Sicily. From enchanting coastal towns to historic landmarks, Sicily offers a myriad of attractions for travelers. The database schema encompasses tables for attractions, bookings, visitors, and more, providing a comprehensive dataset for practicing SQL queries.
@@ -17,9 +19,6 @@ Within this repository, you'll find a series of SQL exercises ranging from basic
 
 ## Contributions
 We welcome contributions from SQL enthusiasts of all levels! If you have additional exercises, improvements to existing ones, or suggestions for enhancing the learning experience, feel free to submit pull requests. Together, we can create a valuable resource for SQL learners seeking to brush up on their skills.
-
-Let's Get Started:
-Whether you're a seasoned SQL pro or a newcomer looking to learn, dive into the exercises and start revitalizing your SQL proficiency with SQLRevival_SicilyBookings! Happy querying! :hugs: 
 
 ## Structure of the repository
 - `schema.sql`: contains the schema definition for the database, including tables, columns, data types, constraints, and relationships. In particular there are 8 tables
@@ -120,9 +119,10 @@ After the schema has been imported, go back to the tab "Import from Disk" on top
 
 ![alt next](./tutorial/workbench_3.png)
 
-Now let's dive in!
+# Let's Get Started:
+Whether you're a seasoned SQL pro or a newcomer looking to learn, dive into the exercises and start revitalizing your SQL proficiency with SQLRevival_SicilyBookings! Happy querying! :hugs: 
 
-# Queries
+## Queries
 
 ###### Query 1:
 Retrieve the names and descriptions of all attractions located in Palermo.
