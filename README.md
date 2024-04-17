@@ -1,6 +1,6 @@
 # Welcome to SQLRevival: Sicily Edition! :hugs: :beach_umbrella:
 
-***Are you ready to dust off your SQL skills and dive back into the world of databases?**
+**Are you ready to dust off your SQL skills and dive back into the world of databases?**
 
 ![alt text](sicily.png)
 
