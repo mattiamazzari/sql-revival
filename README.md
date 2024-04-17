@@ -21,6 +21,105 @@ We welcome contributions from SQL enthusiasts of all levels! If you have additio
 Let's Get Started:
 Whether you're a seasoned SQL pro or a newcomer looking to learn, dive into the exercises and start revitalizing your SQL proficiency with SQLRevival_SicilyBookings! Happy querying!
 
+## Content inside the repository
+- `schema.sql`: contains the schema definition for the database, including tables, columns, data types, constraints, and relationships. In particular there are 8 tables
+- `data.sql`: contains data insertion statements that populate the tables defined in the schema.
+- `delete_all_data_from_tables.sql`: an SQL script that allows to delete all the data from the tables, in case you need it
+
+## Tables Overview
+
+### Attractions Table
+| Column Name     | Data Type |
+|-----------------|-----------|
+| attraction_id   | INT       |
+| attraction_name | TEXT      |
+| attraction_type | TEXT      |
+| description     | TEXT      |
+| location        | TEXT      |
+| opening_hours   | TEXT      |
+| entrance_fee    | FLOAT     |
+| rating          | FLOAT     |
+
+### Visitors Table
+| Column Name | Data Type |
+|-------------|-----------|
+| visitor_id  | INT       |
+| first_name  | TEXT      |
+| last_name   | TEXT      |
+| email       | TEXT      |
+| nationality | TEXT      |
+
+### Visits Table
+| Column Name   | Data Type |
+|---------------|-----------|
+| visit_id      | INT       |
+| visitor_id    | INT       |
+| attraction_id | INT       |
+| visit_date    | DATE      |
+
+### Hotels Table
+| Column Name  | Data Type |
+|--------------|-----------|
+| hotel_id     | INT       |
+| hotel_name   | TEXT      |
+| location     | TEXT      |
+| rating       | FLOAT     |
+| price_range  | TEXT      |
+
+### Bookings Table
+| Column Name    | Data Type |
+|----------------|-----------|
+| booking_id     | INT       |
+| visitor_id     | INT       |
+| hotel_id       | INT       |
+| check_in_date  | DATE      |
+| check_out_date | DATE      |
+| price          | FLOAT     |
+
+### Local Cuisine Table
+| Column Name  | Data Type |
+|--------------|-----------|
+| cuisine_id   | INT       |
+| cuisine_name | TEXT      |
+| description  | TEXT      |
+
+### Restaurants Table
+| Column Name   | Data Type |
+|---------------|-----------|
+| restaurant_id | INT       |
+| restaurant_name | TEXT    |
+| location      | TEXT      |
+| cuisine_id    | INT       |
+| rating        | FLOAT     |
+
+### Events Table
+| Column Name | Data Type |
+|-------------|-----------|
+| event_id    | INT       |
+| event_name  | TEXT      |
+| location    | TEXT      |
+| date        | DATE      |
+| description | TEXT      |
+
+## Setup
+In case you don't have MySQL Server and MySQL Workbench installed, if you have Windows follow this guide:
+
+[A Step-by-Step Guide to Installing MySQL and MySQL Workbench on Windows](https://arvideichner.medium.com/a-step-by-step-guide-to-installing-mysql-and-mysql-workbench-on-windows-c4f2e9e37fb8)
+
+Once you have everything installed and you have launched MySQL Workbench, open a connection and then we need to import the schema and populate the tables.
+
+Go to "Server" > "Data Import"
+
+![alt next](./tutorial/workbench_1.png)
+
+Then, specify the path where the `schema.sql` is located and then click "Start Import"
+
+![alt next](./tutorial/workbench_2.png)
+
+After the schema has been imported, go back to the tab "Import from Disk" on top and do the same steps with `data.sql`.
+
+![alt next](./tutorial/workbench_3.png)
+
 # Queries
 
 ###### Query 1:
