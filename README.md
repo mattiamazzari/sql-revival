@@ -1,6 +1,8 @@
-# Introduction:
+# Welcome to SQLRevival: Sicily Edition!
 
-Welcome to SQLRevival: Sicily Edition!
+![alt text](sicily.png)
+
+## Introduction:
 
 Are you ready to dust off your SQL skills and dive back into the world of databases? Whether you're a seasoned SQL pro or someone who hasn't touched SQL in years, this repository is your gateway to rekindling your passion for querying data. This repository is designed to provide a hands-on refresher on SQL through a series of exercises focused on managing bookings and visits in the beautiful island of Sicily.
 
