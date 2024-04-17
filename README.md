@@ -101,7 +101,7 @@ Whether you're a seasoned SQL pro or a newcomer looking to learn, dive into the 
 | date        | DATE      |
 | description | TEXT      |
 
-## Setup
+## Setup MySQL Workbench
 In case you don't have MySQL Server and MySQL Workbench installed, if you have Windows follow this guide:
 
 [A Step-by-Step Guide to Installing MySQL and MySQL Workbench on Windows](https://arvideichner.medium.com/a-step-by-step-guide-to-installing-mysql-and-mysql-workbench-on-windows-c4f2e9e37fb8)
